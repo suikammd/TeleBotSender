@@ -14,7 +14,7 @@ ENV BOTTOKEN b
 ENV GROUPID 0
 ENV PERSONALID 0
 
-COPY --from=builder /go/bin/cmd /usr/bin/teleBotSender
+COPY --from=builder /go/bin/teleBotSender /usr/bin/teleBotSender
 
 CMD exec teleBotSender \
         --b=$BOTTOKEN \

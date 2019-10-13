@@ -1,0 +1,7 @@
+forwardbot:
+  image: losuika/forwardbot
+  environment:
+    - BOTTOKEN=
+    - GROUPID=
+    - PERSONALID=
+  restart: always
